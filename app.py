@@ -21,7 +21,7 @@ def get_gemini_response(question):
         response = model.generate_content(question)
     return response.text if response is not None else None
 
-# Streamlit UI
+# Streamlit UI IO
 st.set_page_config(page_title="Q n A DEMO")
 st.header("Gemini LLM application")
 input_question = st.text_input("Input: ", key="input")
